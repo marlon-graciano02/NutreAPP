@@ -39,8 +39,8 @@ public class Usuario {
    @Column (name = "departamento",nullable = false, unique = false)
    private Departamento departamento;
 
-   @Column (name = "contraseña", nullable = false, unique = false)
-   private String contraseña_hash;
+   @Column (name = "contrasena", nullable = false, unique = false)
+   private String contrasena_hash;
 
 
    //creando relaciones
@@ -53,13 +53,13 @@ public class Usuario {
    
    public Usuario() {
    }
-   public Usuario(UUID id, String nombre, String correo, Rol rol, Departamento departamento, String contraseña_hash) {
+   public Usuario(UUID id, String nombre, String correo, Rol rol, Departamento departamento, String contrasena_hash) {
     this.id = id;
     this.nombre = nombre;
     this.correo = correo;
     this.rol = rol;
     this.departamento = departamento;
-    this.contraseña_hash = contraseña_hash;
+    this.contrasena_hash = contrasena_hash;
    }
    public UUID getId() {
     return id;
@@ -91,11 +91,11 @@ public class Usuario {
    public void setDepartamento(Departamento departamento) {
     this.departamento = departamento;
    }
-   public String getContraseña_hash() {
-    return contraseña_hash;
+   public String getContrasena_hash() {
+    return contrasena_hash;
    }
-   public void setContraseña_hash(String contraseña_hash) {
-    this.contraseña_hash = contraseña_hash;
+   public void setContrasena_hash(String contrasena_hash) {
+    this.contrasena_hash = contrasena_hash;
    }
 
    
